@@ -1,0 +1,39 @@
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: rgb(87, 87, 87);
+    --header-bg-color: #043677;
+    --white: whitesmoke;
+
+
+    --font-size: clamp(1rem, 3vh, 1.2rem);
+
+    /*  */
+}
+
+html{
+    font-family: "Font Awesome 6 Free" ;
+    font-family:  system-ui;
+    background-color: #fff;
+    font-size: var(--font-size);
+}
+body{
+    color: var(--color);
+}
+
+p, li{
+    line-height: 1.5rem;
+}
+
+
+.header{
+    font-family: 'Trebuchet MS';
+    color: var(--white);
+    background-color: var(--header-bg-color);
+}
