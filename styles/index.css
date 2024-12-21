@@ -21,7 +21,7 @@
     --section-wrapper-padding: .8rem;
 
     /* width */
-    --wrapper-max-width: 900px;
+    --wrapper-max-width: 1000px;
     /* transition and animation */
     --transition-duration: .25s;
     --animation-duration: .5s;
@@ -128,12 +128,16 @@ figcaption{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
     row-gap: var(--row-gap);
 }
 .card{
     box-shadow: 0 0 20px rgba(199, 196, 196, 0.443);
     padding: 24px .4rem .4rem ;
     border-radius: 1rem;
+    max-width: 440px;
 }
 .card__figure{
     width: 100%;
@@ -229,6 +233,9 @@ figcaption{
     row-gap: 2rem;
     column-gap: 1rem;
 }
+.hero__item{
+    flex: 1;
+}
 .hero__h1{
     word-wrap:break-word;
     font-size: clamp(2rem, 7vh, 7rem);
@@ -277,6 +284,7 @@ figcaption{
 .team__card{
     background-color: hsl(214, 100%, 14%);
     box-shadow: unset;
+    width: 100%;
 }
 .team__card img{
     border-radius: 100%;
@@ -300,6 +308,8 @@ figcaption{
 }
 .testimonial__card-wrapper{
     padding-top: 3rem;
+    display: grid;
+    place-content: center;
 }
 .testimonial__scroller {
     padding: 5rem .3em 32px;
@@ -307,6 +317,7 @@ figcaption{
     gap: 16px; /* Space between cards */
     overflow-x: auto;
     scroll-behavior: smooth; /* Enables smooth scrolling */
+    max-width: 500px;
 }
 .testimonial__scroller:active{
     cursor: grabbing;
@@ -320,6 +331,7 @@ figcaption{
     cursor: grab;
     position: relative;
     padding-top: 150px;
+    min-width: 100%;
 }
 .testimonial__card-figure {
     /* background-color:red ; */
@@ -402,5 +414,51 @@ figcaption{
     }
 }
 
-
-
+@media (min-width: 500px) {
+    .section-wrapper{
+        max-width: min(100%, 700px);
+    }
+    .hero{
+        padding-bottom: min(80vh, 150px);
+    }
+}
+@media (min-width: 700px) {
+    .hero__wrapper{
+        flex-direction: row;
+    }
+    .service__card-wrapper, 
+    .team__card-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 767px) {
+    .card__wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .about__figure img{
+        object-fit: contain;
+    }
+    .about__container{
+        flex-direction: row;
+    }
+    .about__wrapper{
+        max-width: 670px;
+    }
+    .about__item{
+        flex : 1;
+    }
+    .why-choose-us__card{
+        min-width: 65%;
+    }
+}
+@media (min-width: 900px) {
+    .section-wrapper{
+        max-width: var(--wrapper-max-width);
+    }
+    .service__card-wrapper,
+    .team__card-wrapper{
+        display: flex;
+    }
+}
