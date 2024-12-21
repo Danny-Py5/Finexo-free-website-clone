@@ -293,17 +293,17 @@ figcaption{
 }
 /* testimonia */
 .testimonial{
-    
+    /* background-color: rebeccapurple; */
 }
 .testimonial__card-wrapper{
     padding-top: 3rem;
 }
-.testimonial__scroller{
-    overflow-x: auto;
-    padding: .5rem .3rem;
+.testimonial__scroller {
+    padding: 5rem .3em 32px;
     display: flex;
-    column-gap: 32px;
-    background-color: rgba(170, 147, 179, 0.426);
+    gap: 16px; /* Space between cards */
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 .testimonial__scroller:active{
     cursor: grabbing;
@@ -311,9 +311,24 @@ figcaption{
 .testimonial__scroller::-webkit-scrollbar{
     display: none;
 }
-.testimonial__card{
-    min-width: 100%;
+
+.testimonial__card {
+    flex: 0 0 100%; /* Cards take 100% width */
     cursor: grab;
+    position: relative;
+    padding-top: 150px;
+}
+.testimonial__card-figure {
+    /* background-color:red ; */
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -15%;
+    left: 5px;
+}
+.testimonial__card-figure::after{
+
 }
 .testimonial img{
     border-radius: 50%;
