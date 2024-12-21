@@ -8,7 +8,7 @@
     <meta name="description" content="This is a cloned website from 'free website template'. for educational purpose and practicing website development.">
     <title>Finexo - clone</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="styles/index.css">
 
@@ -54,11 +54,11 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="section-wrapper">
+        <div class="section-wrapper hero__wrapper">
             <section class="hero__item1 hero__item">
-                <h1>CRYPTO CURRENCY</h1>
+                <h1 class="hero__h1">CRYPTO CURRENCY</h1>
                 <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.</p>
-                <a href="#">Read More</a>
+                <button class="hero__button">Read More</button>
             </section>
 
             <section class="hero__item2 hero__item">
@@ -72,18 +72,241 @@
     <main>
         <section class="service section">
             <div class="section-wrapper">
-                <h2>Our Services</h2>
+                <h2>Our <span>Services</span></h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
 
-                <section class="card">
-                    <figure>
-                        <img width="100" src="images/s1.png" alt="">
-                        <figcaption>CURRENCY WALLET</figcaption>
-                    </figure>
-                    <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+                <div class="card__wrapper service__card-wrapper">
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/s1.png" alt="">
+                            <figcaption>CURRENCY WALLET</figcaption>
+                        </figure>
+                        <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+                        <a href="#">Read More</a>
+                    </section>
 
-                    <a href="#">Read More</a>
-                </section>
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/s2.png" alt="">
+                            <figcaption>SECURITY STORAGE</figcaption>
+                        </figure>
+                        <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+    
+                        <a href="#">Read More</a>
+                    </section>
+
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/s3.png" alt="">
+                            <figcaption>EXPERT SUPPORT</figcaption>
+                        </figure>
+                        <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using</p>
+    
+                        <a href="#">Read More</a>
+                    </section>
+                </div>
+
+                <button class="service__button">View All</button>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="section-wrapper about__wrapper">
+                <h2 class="about__h2">About <span>Us</span></h2>
+                <p class="about__p">Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus</p>
+
+                <div class="about__container">
+                    <figure>
+                        <img src="images/about-img.png" alt="about image">
+                    </figure>
+                    <div class="about__detail">
+                        <h2>We Are Finexo</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+
+                        <p>Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.</p>
+                    </div>
+
+                    <button class="about__button" >Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section why-choose-us">
+            <div class="section-wrapper">
+                <h2 class="why-choose-us__h2">Why Choose <span>Us</span></h2>
+                <div class="card__wrapper why-choose-us__card-wrapper">
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/w1.png" alt="">
+                            <figcaption>Expert Management</figcaption>
+                        </figure>
+                        <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus</p>
+                    </section>
+
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/w2.png" alt="">
+                            <figcaption>Expert Management</figcaption>
+                        </figure>
+                        <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus</p>
+                    </section>
+
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/w3.png" alt="">
+                            <figcaption>Expert Management</figcaption>
+                        </figure>
+                        <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus</p>
+                    </section>
+
+                    <section class="card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/w4.png" alt="">
+                            <figcaption>Expert Management</figcaption>
+                        </figure>
+                        <p>Incidunt odit rerum tenetur alias architecto asperiores omnis cumque doloribus aperiam numquam! Eligendi corrupti, molestias laborum dolores quod nisi vitae voluptate ipsa? In tempore voluptate ducimus officia id, aspernatur nihil. Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus</p>
+                    </section>
+                </div>
+                <button class="why-choose-us__button">Read more</button>
+            </div>
+        </section>
+
+        <section class="team section">
+            <div class="team__wrapper section-wrapper">
+                <h2>Our <span>Team</span></h2>
+                
+                <div class="card__wrapper team__card-wrapper">
+                    
+                    <section class="card team__card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/team-1.jpg" alt="">
+                            <figcaption><span>Joseph Brown</span></figcaption>
+                            <p>Marketing Head</p>
+                        </figure>
+                        <div class="team__social-cont">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook icon"></i>
+                              </a>
+                              <!-- Twitter -->
+                              <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter icon"></i>
+                              </a>
+                              <!-- LinkedIn -->
+                              <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                              </a>
+                              <!-- Instagram -->
+                              <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram icon"></i>
+                              </a>
+                        </div>
+                    </section>
+
+                    <section class="card team__card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/team-1.jpg" alt="">
+                            <figcaption><span>Nancy White</span></figcaption>
+                            <p>Marketing Head</p>
+                        </figure>
+                        <div class="team__social-cont">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook icon"></i>
+                              </a>
+                              <!-- Twitter -->
+                              <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter icon"></i>
+                              </a>
+                              <!-- LinkedIn -->
+                              <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                              </a>
+                              <!-- Instagram -->
+                              <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram icon"></i>
+                              </a>
+                        </div>
+                    </section>
+                    <section class="card team__card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/team-1.jpg" alt="">
+                            <figcaption><span>Earl Martinez</span></figcaption>
+                            <p>Marketing Head</p>
+                        </figure>
+                        <div class="team__social-cont">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook icon"></i>
+                              </a>
+                              <!-- Twitter -->
+                              <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter icon"></i>
+                              </a>
+                              <!-- LinkedIn -->
+                              <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                              </a>
+                              <!-- Instagram -->
+                              <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram icon"></i>
+                              </a>
+                        </div>
+                    </section>
+
+                    <section class="card team__card">
+                        <figure class="card__figure center-flex flex-column">
+                            <img class="card__img" width="100" src="images/team-1.jpg" alt="">
+                            <figcaption><span>Josephine Allard</span></figcaption>
+                            <p>Marketing Head</p>
+                        </figure>
+                        <div class="team__social-cont">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa-brands fa-facebook icon"></i>
+                              </a>
+                              <!-- Twitter -->
+                              <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa-brands fa-twitter icon"></i>
+                              </a>
+                              <!-- LinkedIn -->
+                              <a href="https://www.linkedin.com" target="_blank">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                              </a>
+                              <!-- Instagram -->
+                              <a href="https://www.instagram.com" target="_blank">
+                                <i class="fa-brands fa-instagram icon"></i>
+                              </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial section">
+            <div class="section-wrapper">
+                <h2 class="testimonial__h2">What says our <span>Customers</span></h2>
+
+                <div class="testimonial__card-wrapper">
+                    <div class="testimonial__scroller">
+                        <section class="card testimonial__card">
+                            <figure class="card__figure center-flex flex-column">
+                                <img class="card__img" width="100" src="images/team-2.jpg" alt="">
+                                <figcaption><strong>LusDen</strong></figcaption>
+                                <p>Lorem ipsum. ect</p>
+                            </figure>
+                        </section>
+
+                        <section class="card testimonial__card">
+                            <figure class="card__figure center-flex flex-column">
+                                <img class="card__img" width="100" src="images/team-1.jpg" alt="">
+                                <figcaption><strong>LusDen</strong></figcaption>
+                                <p>Lorem ipsum. ect</p>
+                            </figure>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="team__social-cont">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
             </div>
         </section>
     </main>
