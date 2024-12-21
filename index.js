@@ -97,3 +97,8 @@ document.querySelectorAll('.no-select').forEach(elem => {
         e.preventDefault(); // Prevents text selection
     });  
 })
+
+window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+});

@@ -13,7 +13,7 @@
     --primary-color: rgb(9, 179, 212);
 
 
-    --font-size: clamp(1rem, 3vh, 1.1rem);
+    --font-size: clamp(1rem, 4vh, 1.2rem);
 
     --section-padding: 5rem 0 0;
     --section-padding-top: 5rem;
@@ -40,10 +40,11 @@ html{
     font-family:  system-ui;
     background-color: #fff;
     font-size: var(--font-size);
+    padding: 0;
 }
 body{
     color: var(--color);
-    padding-bottom: 24rem;
+    padding-bottom: 0;
 }
 h1, h2 {
     margin-bottom: 1rem;
@@ -59,7 +60,9 @@ p, a, li{
 a{
     text-decoration: none;
 }
-
+ul{
+    list-style-type: none;
+}
 a:hover{
     color: var(--primary-color);
 }
@@ -334,6 +337,59 @@ figcaption{
     border-radius: 50%;
 }
 
+/* footer */
+.footer{
+    background-color: #011836;
+    color: var(--white);
+}
+/* .footer__h2{
+    margin-bottom: 2rem;
+} */
+.footer :where(li, a:any-link, p, h2, input){
+    color: inherit;
+    text-align: left;
+}
+.footer__wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+    row-gap: var(--row-gap);
+}
+.footer__a:hover{
+    color: var(--primary-color);
+}
+.footer__social-group{
+    /* background-color: #fff; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.footer__social-group a{
+    margin-left: 1rem;
+    display: block;
+    display: inline;
+    width: 100%;
+}
+.footer__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+}
+.footer__form input{
+    background-color: rgba(0, 0, 0, 0);
+    padding: var(--padding);
+    border: none;
+    padding-left: 0;
+    font: inherit;
+    border-bottom: 2px solid var(--white);
+}
+.footer__form input:focus{
+    outline: none;
+}
+.footer__wrapper + p{
+    text-align: center;
+}
 /* Animation */
 @keyframes dropGradually {
     from {
@@ -345,3 +401,6 @@ figcaption{
         padding-bottom: 0;
     }
 }
+
+
+
