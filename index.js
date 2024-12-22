@@ -21,9 +21,9 @@ function showNavOndesktop(){
 }
 
 window.addEventListener('resize', (e) => {
-    if (e.target.innerHeight < 700){
+    if (e.target.innerHeight > 767){
         showNavOndesktop();
-        isToggled = !isToggled;
+        isToggled = false;
     }
 });
 
@@ -102,3 +102,4 @@ window.scrollTo({
     top: document.body.scrollHeight,
     behavior: 'smooth'
 });
+

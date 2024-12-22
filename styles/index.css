@@ -21,7 +21,7 @@
     --section-wrapper-padding: .8rem;
 
     /* width */
-    --wrapper-max-width: 1000px;
+    --wrapper-max-width: 1200px;
     /* transition and animation */
     --transition-duration: .25s;
     --animation-duration: .5s;
@@ -39,7 +39,6 @@ html{
     font-family: "Font Awesome 6 Free" ;
     font-family:  system-ui;
     background-color: #fff;
-    font-size: var(--font-size);
     padding: 0;
 }
 body{
@@ -49,11 +48,15 @@ body{
 h1, h2 {
     margin-bottom: 1rem;
 }
+h2{
+    font-size: min(50vh, 2rem);
+}
 p, li{
     line-height: 1.5rem;
     margin-bottom: 1rem;
 }
 p, a, li{
+    font-size: var(--font-size); /* FS must not be here */
     color: var(--color);
     transition: color var(--transition-duration);
 }
@@ -152,7 +155,7 @@ figcaption{
     color: var(--white);
     background-color: var(--header-bg-color);
     padding: var(--padding);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .header__h2{
     margin-bottom: 0;
@@ -161,6 +164,7 @@ figcaption{
     justify-content: space-between;
     max-width: var(--wrapper-max-width);
     align-items: flex-start;
+    margin: auto;
 }
 .header__nav{
     display: none;
@@ -175,6 +179,9 @@ figcaption{
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+}
+header nav ul li{
+    margin-bottom: 0;
 }
 .header__a:any-link{
     color: var(--white);
@@ -235,6 +242,8 @@ figcaption{
 }
 .hero__item{
     flex: 1;
+    align-self: center;
+    justify-self: center;
 }
 .hero__h1{
     word-wrap:break-word;
@@ -268,7 +277,11 @@ figcaption{
 .about__button{
     align-self: flex-start;
 }
-
+.why-choose-us__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .why-choose-us__button{
     /* text-align: left; */
     margin-top: var(--button-margin-top);
@@ -431,8 +444,26 @@ figcaption{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+    .footer__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 767px) {
+    .header__menu{
+        display: none;
+    }
+    .header__nav{
+        display: inline-block;
+        margin: auto 0;
+    }
+    .header__ul{
+        flex-direction: row;
+        /* background-color: #fff; */
+        width: 500px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
     .card__wrapper{
         flex-direction: row;
         flex-wrap: wrap;
@@ -460,5 +491,12 @@ figcaption{
     .service__card-wrapper,
     .team__card-wrapper{
         display: flex;
+    }
+    .team__card-wrapper{
+        flex-wrap: nowrap;
+    }
+    .footer__wrapper{
+        gap: 78px;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
