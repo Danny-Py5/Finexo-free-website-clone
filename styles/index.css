@@ -249,6 +249,9 @@ header nav ul li{
     word-wrap:break-word;
     font-size: clamp(2rem, 7vh, 7rem);
 }
+.hero__item2{
+    animation: bounce 7s linear infinite;
+}
 
 /* SERVICE */
 .service, 
@@ -425,6 +428,28 @@ header nav ul li{
         opacity: 1;
         padding-bottom: 0;
     }
+}
+
+@keyframes bounce {
+    0%, 30%, 50%, 70%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-50px);
+    }
+    40%{
+        transform: translateY(-40px);
+    }
+    60%{
+        transform: translateY(-30px);
+    }
+    80%{
+        transform: translateY(-20px);
+    }
+    90%{
+        transform: translateY(-5px);
+    }
+    
 }
 
 @media (min-width: 500px) {
